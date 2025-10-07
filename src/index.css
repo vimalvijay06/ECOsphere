@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-background text-text-primary;
+}
+
+.card-hover {
+  @apply transition-transform duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg;
+}

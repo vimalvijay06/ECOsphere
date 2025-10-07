@@ -1,0 +1,243 @@
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #22c55e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #16a34a;
+}
+
+/* Professional animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.6s ease-out;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.3s ease-out;
+}
+
+/* Gradient backgrounds */
+.gradient-bg {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+}
+
+.gradient-bg-secondary {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+}
+
+.dark .gradient-bg-secondary {
+  background: linear-gradient(135deg, #14532d 0%, #166534 100%);
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Badge animations */
+@keyframes badge-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(34, 197, 94, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.8);
+  }
+}
+
+.badge-glow {
+  animation: badge-glow 2s ease-in-out infinite;
+}
+
+/* Progress bar animations */
+@keyframes progress-fill {
+  from {
+    width: 0%;
+  }
+  to {
+    width: var(--progress-width);
+  }
+}
+
+.progress-fill {
+  animation: progress-fill 1.5s ease-out;
+}
+
+/* Sustainability icons */
+.sustainability-icon {
+  filter: drop-shadow(0 0 8px rgba(34, 197, 94, 0.3));
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .mobile-hidden {
+    display: none;
+  }
+}
+
+/* Text contrast improvements */
+.text-high-contrast {
+  color: #0f172a !important;
+}
+
+.text-medium-contrast {
+  color: #334155 !important;
+}
+
+.text-low-contrast {
+  color: #64748b !important;
+}
+
+/* Global text visibility fixes */
+.text-gray-600 {
+  color: #475569 !important;
+}
+
+.text-gray-500 {
+  color: #64748b !important;
+}
+
+.text-gray-400 {
+  color: #94a3b8 !important;
+}
+
+/* Dark mode text improvements */
+.dark .text-gray-600 {
+  color: #9ca3af !important;
+}
+
+.dark .text-gray-500 {
+  color: #6b7280 !important;
+}
+
+.dark .text-gray-400 {
+  color: #9ca3af !important;
+}
+
+/* Heading text improvements */
+h1, h2, h3, h4, h5, h6 {
+  color: #1e293b !important;
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  color: #f1f5f9 !important;
+}
+
+/* Description text improvements */
+p {
+  color: #475569 !important;
+}
+
+.dark p {
+  color: #cbd5e1 !important;
+}
+
+/* Professional hover effects */
+.hover-lift {
+  transition: all 0.2s ease-out;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hover-scale {
+  transition: transform 0.2s ease-out;
+}
+
+.hover-scale:hover {
+  transform: scale(1.02);
+}
+
+/* Button improvements */
+.btn-professional {
+  transition: all 0.2s ease-out;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+}
+
+.btn-professional:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* Card improvements */
+.card-professional {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-out;
+}
+
+.card-professional:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #cbd5e1;
+}
+
+/* Dark mode adjustments */
+.dark .text-muted {
+  color: #9ca3af;
+}
+
+.dark .bg-muted {
+  background-color: #374151;
+}
+
+.dark .card-professional {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+.dark .card-professional:hover {
+  border-color: #475569;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
